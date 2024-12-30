@@ -1,0 +1,960 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------------------navigation bar------------------------------------------------------------------------------------ */
+
+body {
+    background-color: black;
+}
+
+header {
+    background: url(images/purchase222.jpg);
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+}
+
+section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 80vw;
+    height: 450px;
+}
+
+section h1,
+h2 {
+    color: white;
+    margin: 10px 0;
+    font-family: cursive;
+}
+
+section h1 {
+    font-size: 40px;
+}
+
+section h2 {
+    font-size: 40px;
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+}
+
+.option-btn button {
+    color: white;
+    border: 3px solid white;
+    background: 0;
+    border-radius: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin: 15px 10px;
+    font-size: 20px;
+
+}
+
+.option-btn button a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.option-btn button:hover {
+    box-shadow: 0px 0px 10px white;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------about ------------------------------------------------------ */
+.about {
+    width: 100%;
+    background: rgb(0, 0, 0);
+    height: 50vh;
+    padding-top: 30px;
+}
+
+.abt-container {
+    border: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(221, 221, 221);
+    width: 85%;
+    height: 270px;
+    bottom: -90px;
+    left: 100px;
+    padding: 5px 10px;
+}
+
+.abt-title {
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.abt-title li {
+    list-style-type: none;
+}
+
+.abt-title li {
+    color: black;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 22px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.abt-title li:hover {
+    border-bottom: 2px solid rgb(33, 33, 33);
+    color: var(--home--);
+}
+
+.abt-content {
+    width: 100%;
+    padding: 10px 90px;
+    margin-top: 10px;
+}
+
+.abt-content p {
+    position: absolute;
+    margin: 2px auto;
+    width: 87%;
+    left: 80px;
+    font-size: 15px;
+    color: rgb(67, 66, 66);
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+
+.abt-content div {
+    display: none;
+}
+
+
+.abt-content .buy {
+    display: block;
+}
+
+.active {
+    border-bottom: 2px solid rgb(33, 33, 33);
+    color: var(--home--);
+}
+
+/* ------------------------about us page---------------------------------------- */
+.details {
+    margin-top: 230px;
+    width: 100%;
+    background-color: black;
+    height: 95vh;
+    display: flex;
+    padding: 60px 20px;
+}
+
+.detail-img {
+    border-radius: 40px;
+    background: url(images/abt-img.jpeg);
+    width: 40%;
+    margin-top: 20px;
+    height: 440px;
+    margin-left: 30px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.detail-content {
+    padding: 15px 30px;
+    width: 60%;
+    height: 500px;
+}
+
+.detail-content h2 {
+    color: var(--home--);
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-variant: small-caps;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detail-content p {
+    letter-spacing: 1px;
+    color: aliceblue;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------------------------------contact us form--------------------------------------------------------------- */
+.contact {
+    background-color: black;
+    width: 100%;
+    height: 110vh;
+}
+
+.contact h1 {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-variant: small-caps;
+    color: var(--home--);
+}
+
+.contact-form {
+    background-color: rgb(227, 226, 226);
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    height: 600px;
+    border-radius: 8px;
+}
+
+.left-contact {
+    flex-basis: 50%;
+    height: 550px;
+    margin-left: 25px;
+    padding: 3px 15px;
+}
+
+.left-contact h2 {
+    color: rgba(0, 0, 0, 0.823);
+    font-size: 28px;
+    cursor: default;
+    padding-top: 5 px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+}
+
+.contact-img {
+    text-align: center;
+    height: 240px;
+    width: 490px;
+}
+
+/* .contact-img img {
+    margin-left: 30px;
+    width: 450px;
+    height: 250px;
+} */
+
+
+.contact-detail h2 {
+    margin-top: 35px;
+    color: rgba(0, 0, 0, 0.831);
+}
+
+.inner-contact-detail {
+    width: 55%;
+}
+
+.inner-contact-detail i {
+    background-color: transparent;
+    color: #080808c4;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin: 5px 10px;
+    vertical-align: middle;
+}
+
+
+.inner-contact-detail p {
+    display: inline-block;
+    color: #000000d1;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.inner-contact-detail p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.inner-contact-detail p a {
+    color: var(--home--);
+    text-decoration: none;
+}
+
+
+.contact-icons {
+    margin-top: 15px;
+    margin-left: 13px;
+}
+
+.contact-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 10px;
+}
+
+
+.right-contact {
+    flex-basis: 50%;
+    height: 600px;
+}
+
+.right-contact form {
+    display: flex;
+    height: 600px;
+    max-width: 550px;
+    flex-direction: column;
+    padding: 14px 30px;
+    margin: 0px auto;
+    border-radius: 3px;
+}
+
+.contact-form form h3 {
+    font-size: 30px;
+    cursor: default;
+    color: rgba(0, 0, 0, 0.802);
+    font-variant: small-caps;
+}
+
+.right-contact form input,
+textarea {
+    background: 0;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.583);
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 16px;
+    outline: none;
+}
+
+
+.right-contact form button {
+    padding: 13px 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------footer------------------------------------------------------ */
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+
+.footer-content {
+    background: #1a1a1ad8;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* -----footer left------ */
+
+.footer-left {
+    width: 40%;
+}
+
+.footer-company-name {
+    color: var(--home--);
+}
+
+/* ------The web logo------ */
+
+.footer-content h3 {
+    color: #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-content h3 span {
+    color: var(--home--);
+}
+
+/*----- Footer links------ */
+
+.footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-web-name {
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* -----Footer Center----- */
+
+.footer-center {
+    width: 35%;
+}
+
+.footer-center i {
+    background-color: var(--home--);
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-center p a {
+    color: var(--home--);
+    text-decoration: none;
+}
+
+.footer-links .link-1:before {
+    content: none;
+}
+
+/*----- Footer Right------- */
+
+.footer-right {
+    width: 20%;
+}
+
+.footer-web-about {
+    line-height: 20px;
+    color: var(--home--);
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-web-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-icons {
+    margin-top: 25px;
+}
+
+.footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: var(--home--);
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 880px) {
+
+    .footer-content {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-center i {
+        margin-left: 0;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ============================================================================================================ */
+
+/* mobiles */
+@media only screen and (max-width:600px) {
+    section {
+        width: 100vw;
+        height: 450px;
+    }
+
+    section {
+        margin-top: -60px;
+    }
+
+    section h1,
+    h2 {
+        margin: 5px 0;
+    }
+
+    section h1 {
+        font-size: 20px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .option-btn button {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+    .option-btn button a {
+        padding: 10px;
+    }
+
+    /* ------------------------------------------------- */
+    .abt-container {
+        width: 90%;
+        height: 30vh;
+        bottom: 200px;
+        left: 24px;
+        overflow: hidden;
+        padding: 5px 10px;
+    }
+
+    .abt-title {
+        margin-top: 5px;
+        width: 100%;
+        height: auto;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .abt-title li {
+        color: black;
+        text-decoration: none;
+        font-variant: small-caps;
+        font-weight: bold;
+        font-size: 17px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .abt-content {
+        width: 100%;
+        padding: 0px 60px;
+    }
+
+    .abt-content p {
+        position: absolute;
+        margin: 0px auto;
+        width: 90%;
+        left: 30px;
+        font-size: 11px;
+        color: rgb(67, 66, 66);
+        text-align: start;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px;
+    }
+
+    /* --------------------------cards--------------------------------------------------------------------- */
+    .details {
+        margin-top: 300px;
+        padding: 20px 15px;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .detail-img {
+        display: none;
+    }
+
+    .detail-content {
+        padding: 15px 30px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .detail-content h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .detail-content p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* -------------------------------contact us form--------------------------------------------------------------- */
+    .contact {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .contact h1 {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .contact-form {
+        width: 95%;
+        margin: 0 auto;
+        height: 540px;
+        border-radius: 8px;
+    }
+
+    .left-contact {
+        display: none;
+    }
+
+    .right-contact {
+        flex-basis: 100%;
+        overflow: hidden;
+    }
+
+    .contact-form form h3 {
+        font-size: 20px;
+    }
+
+    .right-contact form input,
+    textarea {
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 13px;
+    }
+
+    .right-contact form button {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+}
+
+/* -------------------------------------iphones--------------------------------------------- */
+@media only screen and (max-width:375px) {
+    section {
+        width: 95vw;
+        height: 400px;
+    }
+
+    section {
+        margin-top: -60px;
+    }
+
+    section h1,
+    h2 {
+        margin: 5px 0;
+    }
+
+    section h1 {
+        font-size: 18px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    .option-btn button {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .option-btn button a {
+        padding: 10px 5px;
+    }
+
+    /* ------------------------------------------------- */
+    .abt-container {
+        width: 90%;
+        height: 350px;
+        bottom: -60px;
+        left: 20px;
+        padding: 5px 10px;
+        overflow: hidden;
+    }
+
+    .abt-title li {
+        font-size: 13px;
+        margin-right: 5px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .abt-content {
+        width: 100%;
+        padding: 0px 50px;
+    }
+
+    .abt-content p {
+        margin: 0px auto;
+        right: 10px;
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    /* --------------------------cards--------------------------------------------------------------------- */
+    .details {
+        margin-top: 200px;
+        padding: 20px 15px;
+        height: 80vh;
+        margin-bottom: 50px;
+    }
+
+    .detail-img {
+        display: none;
+    }
+
+    .detail-content {
+        padding: 10px 20px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .detail-content h2 {
+        font-size: 24px;
+    }
+
+    .detail-content p {
+        width: 100%;
+        font-size: 12px;
+    }
+
+}
+
+/* ------------------------------------------- */
+@media only screen and (min-width:600px) and (max-width:900px) {
+    section {
+        width: 97vw;
+        height: 450px;
+    }
+
+    section {
+        margin-top: -60px;
+    }
+
+    section h1,
+    h2 {
+        margin: 5px 0;
+    }
+
+    section h1 {
+        font-size: 20px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .option-btn button {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+    .option-btn button a {
+        padding: 10px;
+    }
+
+    /* ------------------------------------------------- */
+    .abt-container {
+        width: 90%;
+        height: 20vh;
+        bottom: 350px;
+        left: 35px;
+        padding: 5px 10px;
+        overflow: hidden;
+    }
+
+    .abt-title {
+        margin-top: 5px;
+        width: 100%;
+        height: auto;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .abt-title li {
+        color: black;
+        text-decoration: none;
+        font-variant: small-caps;
+        font-weight: bold;
+        font-size: 17px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .abt-content {
+        width: 100%;
+        padding: 0px 60px;
+    }
+
+    .abt-content p {
+        position: absolute;
+        margin: 0px auto;
+        width: 90%;
+        left: 30px;
+        font-size: 11px;
+        color: rgb(67, 66, 66);
+        text-align: start;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px;
+    }
+
+    /* --------------------------cards--------------------------------------------------------------------- */
+    .details {
+        margin-top: 200px;
+        padding: 20px 15px;
+        height: auto;
+    }
+
+    .detail-img {
+        display: none;
+    }
+
+    .detail-content {
+        padding: 15px 30px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .detail-content h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .detail-content p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* -----------------contact us---------------------*/
+    /* -------------------------------contact us form--------------------------------------------------------------- */
+    .contact {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .contact h1 {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .contact-form {
+        width: 95%;
+        margin: 0 auto;
+        height: 540px;
+        border-radius: 8px;
+    }
+
+    .left-contact {
+        display: none;
+    }
+
+    .right-contact {
+        flex-basis: 100%;
+        overflow: hidden;
+    }
+
+    .contact-form form h3 {
+        font-size: 20px;
+    }
+
+    .right-contact form input,
+    textarea {
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 13px;
+    }
+
+    .right-contact form button {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+@media (min-width:900px) {
+
+ .detail-content{
+    overflow: hidden;
+ }; 
+
+}

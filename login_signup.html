@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>both</title>
+    <link rel="stylesheet" href="login_signup.css">
+    <link rel="stylesheet" href="color.css">
+</head>
+
+<body>
+    <!-- this is sign up page..................  -->
+    <div class="signup_page" id="signup_page_id">
+        <div class="simple-nav">
+            <h2><a href="#" style="text-decoration: none; color: white;"> A-Mart </a></h2>
+            <div class="login-btn">
+                <button id="login-in">login</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left">
+                <form action="" method="get">
+                    <h2>Welcome to A-Mart</h2>
+                    <h5>sign up with your social network</h5>
+                    <div class="sign-icons"> </div>
+                    <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" required>
+
+                    <input type="text" name="username" id="username" placeholder="Username" autocomplete="on" required>
+
+                    <input type="password" name="password" id="password" placeholder="Password" autocomplete="on"
+                        required>
+                    <button class="sign-up" type="button" id="sign-up">sign up</button>
+                </form>
+            </div>
+            <div class="right">
+                <div class="right-img">
+
+                </div>
+                <div class="right-btn">
+                    <p>Already have an account?</p>
+                    <button id="login-in2">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- this is login page ....................! -->
+
+    <div class="login_page" id="login_page_id">
+        <div class="lg-simple-nav">
+            <h2><a href="#" style="text-decoration: none; color: white;">A-Mart</a></h2>
+            <div class="lg-login-btn">
+                <button id="lg-login-btn" type="submit">sign up</button>
+            </div>
+        </div>
+        <div class="lg-container">
+            <div class="lg-right">
+                <div class="lg-right-img">
+
+                </div>
+                <div class="lg-right-btn">
+                    <p>You don't have an account?</p>
+                    <button id="lg-login-btn2">Sign up</button>
+                </div>
+            </div>
+            <div class="lg-left">
+                <form action="" method="post">
+                    <h2>Welcome to A-Mart</h2>
+                    <h5>sign up with your social network</h5>
+                    <div class="lg-sign-icons"> </div>
+                    <input type="text" name="username" id="lgusername" placeholder="Username or Email" autocomplete="on"
+                        required>
+                    <input type="password" name="password" id="lgpassword" placeholder="Password" autocomplete="on"
+                        required>
+                    <a href="#">Forget Password?</a>
+                    <button class="lg-sign-up" type="button" id="lg-btn">Login</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="login_signup.js"></script>
+</body>
+
+</html>

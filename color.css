@@ -1,0 +1,13 @@
+:root {
+    --bg: rgb(48, 121, 134);
+    --btn: rgb(252, 70, 100);
+    --btn-hover: rgb(173, 8, 33);
+    --lg-bg: rgba(13, 26, 54, 0.914);
+    --lg-btn: rgb(3, 137, 50);
+    --lg-btn-hover: rgb(16, 182, 74);
+    --game--:#ed2045;
+    --bgall--:#282b32;
+    --social--:#0763a1;
+    --home--:rgb(221, 96, 13);
+    --purchase--:rgb(111, 45, 192);
+}

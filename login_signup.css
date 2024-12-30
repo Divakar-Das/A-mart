@@ -1,0 +1,631 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#login_page_id {
+    display: none;
+}
+
+/* --------------------------sign up page--------------------------------------------------- */
+
+
+.simple-nav {
+    background-color: var(--bg);
+    width: 100%;
+    display: flex;
+}
+
+.simple-nav h2 {
+    cursor: pointer;
+    flex-basis: 50%;
+    color: rgba(255, 255, 255, 0.869);
+    margin-left: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: start;
+}
+
+/* --login button top-- */
+
+.login-btn {
+    margin-right: 30px;
+    flex-grow: 1;
+    text-align: end;
+}
+
+.login-btn button {
+    display: inline-block;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: var(--btn);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s;
+    margin: 15px 10px;
+}
+
+.login-btn button:hover {
+    background-color: var(--btn-hover);
+}
+
+
+/* ----------------------------------------- */
+
+.container {
+    background-color: var(--bg);
+    width: 100%;
+    height: 102vh;
+    display: flex;
+}
+
+.left {
+    width: 700px;
+    height: 600px;
+}
+
+.left form {
+    background-color: white;
+    height: 570px;
+    border-radius: 10px;
+    margin: 10px 70px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.left form h2 {
+    color: rgba(13, 13, 13, 0.767);
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.left form h5 {
+    color: rgba(0, 0, 0, 0.523);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+}
+
+.left form input {
+    margin-top: 28px;
+    padding: 15px 20px;
+    /* outline: 1px solid rgb(192, 14, 50); */
+    outline: none;
+    border: none;
+    background-color: rgba(159, 160, 161, 0.171);
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left form input:focus {
+    outline: 1px solid rgb(182, 11, 40);
+}
+
+
+.left form button {
+    display: inline-block;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 13px 15px;
+    width: 160px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(252, 70, 100);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s;
+    margin-top: 30px;
+}
+
+.left form button:focus {
+    outline: 3px solid rgb(252, 70, 100);
+}
+
+.left form button:hover {
+    color: white;
+}
+
+
+.left form button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 70, 100);
+    transform: translateX(-100%);
+    transition: all ease .3s;
+    z-index: -1;
+}
+
+.left form button:hover::before {
+    transform: translateX(0);
+}
+
+.sign-icons {
+    border-radius: 20px;
+    width: 100%;
+    background: url(images/icons777.jpeg);
+    background-position: center;
+    background-size: 125%;
+    background-repeat: no-repeat;
+    height: 120px;
+}
+
+/* ----right---side-- */
+
+.right {
+    margin-bottom: 40px;
+    width: 600px;
+    padding: 10px 20px;
+}
+
+.right-img {
+    border-radius: 20px;
+    background: url(images/bg123.png);
+    width: 70%;
+    margin: 0 auto;
+    height: 470px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.right-btn {
+    width: 100%;
+    position: relative;
+    top: -45px;
+    height: 100px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.right-btn p {
+    color: white;
+    font-family: cursive;
+    font-size: 17px;
+    margin-top: 40px;
+}
+
+.right-btn button {
+    display: inline-block;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    width: 175px;
+    border-radius: 25px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    background-color: var(--btn);
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s;
+    margin-top: 5px;
+}
+
+.right-btn button a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 40px;
+}
+
+.right-btn button:hover {
+    background-color: var(--btn-hover);
+}
+
+/* ---media query-- */
+/* mobiles */
+@media only screen and (max-width:600px) {
+    .right {
+        display: none;
+    }
+}
+
+/* iphones */
+@media only screen and (max-width:375px) {
+    .left form {
+        margin: 0 auto;
+    }
+
+    .left form h2 {
+        font-size: 22px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .left form {
+        margin: 0 auto;
+    }
+
+    .left form h2 {
+        font-size: 22px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+/* ipad */
+@media only screen and (max-width:820px) {
+    .left form {
+        margin: 0 auto;
+    }
+
+    .left form h2 {
+        font-size: 27px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .right-img {
+        max-height: 450px;
+        background-size: 110%;
+        width: 38vw;
+    }
+}
+
+/* ----------the end of sign up page----------------------------------------------------- */
+
+.login-btn a,
+.lg-login-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ----------login page------------------------------------------------------------------- */
+
+.lg-simple-nav {
+    background-color: var(--lg-bg);
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.lg-simple-nav h2 {
+    cursor: pointer;
+    flex-basis: 50%;
+    color: rgb(228, 228, 228);
+    margin-left: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: start;
+}
+
+/* --login button top-- */
+
+.lg-login-btn {
+    margin-right: 30px;
+    flex-grow: 1;
+    text-align: end;
+}
+
+.lg-login-btn button {
+    display: inline-block;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: var(--lg-btn);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s;
+    margin: 15px 10px;
+}
+
+.lg-login-btn button:hover {
+    background-color: var(--lg-btn-hover);
+}
+
+
+/* ------- */
+
+.lg-container {
+    background-color: var(--lg-bg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.lg-left {
+    width: 700px;
+    height: 600px;
+}
+
+.lg-left form {
+    background-color: white;
+    height: 590px;
+    border-radius: 10px;
+    margin: 10px 70px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.lg-left form h2 {
+    color: rgba(13, 13, 13, 0.767);
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.lg-left form h5 {
+    color: rgba(0, 0, 0, 0.523);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+}
+
+.lg-left form input {
+    margin-top: 30px;
+    padding: 15px 20px;
+    font-size: 16px;
+    /* outline: 1px solid rgb(192, 14, 50); */
+    outline: none;
+    border: none;
+    background-color: rgba(159, 160, 161, 0.171);
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.lg-left form input:focus {
+    outline: 1px solid rgb(38, 169, 99);
+}
+
+
+.lg-left form button {
+    display: inline-block;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    width: 170px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(10, 173, 70);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s;
+    margin-top: 40px;
+}
+
+
+
+.lg-left form button:hover {
+    color: white;
+}
+
+
+.lg-left form button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--lg-btn-hover);
+    transform: translateX(-100%);
+    transition: all ease .3s;
+    z-index: -1;
+}
+
+.lg-left form button:hover::before {
+    transform: translateX(0);
+}
+
+.lg-left form a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.854);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+    position: relative;
+    bottom: -20px;
+    margin-top: 10px;
+}
+
+.lg-sign-icons {
+    border-radius: 20px;
+    width: 100%;
+    background: url(images/icons777.jpeg);
+    background-position: center;
+    background-size: 125%;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+/* ----right---side-- */
+
+.lg-right {
+    margin-bottom: 40px;
+    width: 600px;
+    padding: 10px 20px;
+}
+
+.lg-right-img {
+    border-radius: 20px;
+    background: url(images/bg123.png);
+    width: 70%;
+    margin: 0 auto;
+    height: 470px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lg-right-btn {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.lg-right-btn p {
+    color: white;
+    font-family: cursive;
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+.lg-right-btn button {
+    display: inline-block;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    width: 175px;
+    border-radius: 25px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    background-color: var(--lg-btn);
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s;
+    margin-top: 5px;
+    outline: none;
+}
+
+.lg-right-btn button:hover {
+    background-color: var(--lg-btn-hover);
+}
+
+/* ---media query-- */
+/* mobiles */
+@media only screen and (max-width:600px) {
+    .lg-right {
+        display: none;
+    }
+
+}
+
+/* iphones */
+@media only screen and (max-width:375px) {
+    .lg-left form {
+        margin: 0 auto;
+    }
+
+    .lg-login-btn button {
+        width: 100%;
+    }
+
+    .lg-left form h2 {
+        font-size: 22px;
+    }
+
+    .lg-container {
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .lg-right {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .lg-left form {
+        margin: 0 auto;
+    }
+
+    .lg-left form h2 {
+        font-size: 22px;
+    }
+
+    .lg-login-btn button {
+        width: 100%;
+    }
+
+    .lg-container {
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .lg-right {
+        display: none;
+    }
+}
+
+/* ipad */
+@media only screen and (max-width:820px) {
+    .lg-left form {
+        margin: 0 auto;
+    }
+
+    .lg-left form h2 {
+        font-size: 27px;
+    }
+
+    .lg-container {
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .lg-right-img {
+        max-height: 450px;
+        background-size: 110%;
+        width: 38vw;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
